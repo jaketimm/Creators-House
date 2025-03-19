@@ -917,7 +917,7 @@ h2 {
   #RPsbs-248,
   #RPsbsr-248 {
     padding: 0 1em;
-    padding-bottom: 0;
+    margin-bottom: 10%;
     padding-top: 75px;
     position: relative;
     z-index: 1;
@@ -962,7 +962,7 @@ h2 {
   #RPsbs-248 .bcw-title,
   #RPsbsr-248 .bcw-title {
     max-width: 20ch;
-    color: var(--primary);
+    color: var(--bodyTextColor);
     position: relative;
   }
 
@@ -973,15 +973,21 @@ h2 {
   #RPsbs-248 .bcw-text,
   #RPsbsr-248 .bcw-text {
     margin-bottom: 1rem;
-    opacity: 0.8;
     color: var(--bodyTextColor);
   }
 
   #RPsbs-248 .bcw-title,
   #RPsbsr-248 .bcw-title {
-    padding-bottom: 2%;
-
+    margin-bottom: 0;
     text-align: left;
+  }
+
+  #RPsbs-248 .italic
+  {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 5%;
+    font-size: clamp(1.26rem, 2.55vw, 2.7rem);
   }
 
 
@@ -1003,7 +1009,7 @@ h2 {
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
@@ -1018,7 +1024,8 @@ h2 {
 
   #RPsbs-248 .bcw-button-solid:hover,
   #RPsbsr-248 .bcw-button-solid:hover {
-    opacity: .9;
+    color: var(--bodyTextColorWhite);
+    background-color: var(--secondary);
   }
 
   #RPsbs-248 .bcw-picture,
@@ -1866,13 +1873,9 @@ h2 {
 
   #background-video .text-box {
     position: absolute;
-    top: 50%;
-    /* Center vertically */
-    left: 50%;
-    /* Center horizontally */
+    top: 70%;
+    left: 35%;
     transform: translate(-50%, -50%);
-    /* Offset to truly center */
-    width: 80%;
     /* Use 'auto' for responsiveness */
     height: auto;
     /* Use 'auto' for responsiveness */
@@ -1882,9 +1885,9 @@ h2 {
     /* Use flexbox for layout */
     flex-direction: column;
     /* Stack items vertically */
-    justify-content: center;
+    justify-content: flex-start;
     /* Center content vertically in the container */
-    align-items: center;
+    align-items: flex-start;
     /* Center content horizontally */
     padding: 10px;
     /* Add padding for better spacing */
@@ -1894,79 +1897,41 @@ h2 {
   }
 
   #background-video .bcw-title {
-    font-size: clamp(2.9rem, 5.85vw, 4.6rem);
+    font-size: clamp(1.45rem, 2.92vw, 2.3rem);
     font-weight: 500;
     line-height: 1em;
-    text-align: center;
+    text-align: left;
     /* Change from justify to center */
     max-width: 43.75rem;
-    margin: 0 auto 1rem;
     margin-bottom: 0;
     /* Center margin horizontally */
-    color: var(--bodyTextColor);
+    color: var(--bodyTextColorWhite);
     /* Retain your color */
     position: relative;
   }
 
   #background-video .bcw-topper {
-    font-size: clamp(1.45rem, 2.92vw, 2.3rem);
-    font-weight: 580;
+    font-size: clamp(.725rem, 1.46vw, 1.15rem);
+    font-weight: 700;
     line-height: 1em;
-    text-align: center;
+    text-align: left;
     /* Change from justify to center */
     max-width: 43.75rem;
-    margin: 0 auto 1rem;
     margin-bottom: 0;
     /* Center margin horizontally */
-    color: var(--bodyTextColor);
+    color: var(--bodyTextColorWhite);
     /* Retain your color */
     position: relative;
-    text-transform: none;
-
+    font-style: normal;
+    margin-bottom: 2%;
+    letter-spacing: .15rem;
   }
-
-  /* Decorative lines on both sides of the title */
-  #background-video .bcw-topper::before,
-  #background-video .bcw-topper::after {
-    content: '';
-    position: absolute;
-    background: var(--bodyTextColor);
-    /* Line color */
-    height: 1px;
-    /* Height of the line */
-    top: 50%;
-    /* Center vertically relative to the title */
-    transform: translateY(-50%);
-    /* Adjust centering */
-  }
-
-  /* Line before the title on the left */
-  #background-video .bcw-topper::before {
-    left: -70%;
-    /* Distance from the title (adjust as needed) */
-    width: 50%;
-    /* Width of the left line */
-  }
-
-  /* Line after the title on the right */
-  #background-video .bcw-topper::after {
-    right: -70%;
-    /* Distance from the title (adjust as needed) */
-    width: 50%;
-    /* Width of the right line */
-  }
-
 
   /* Tablet - 768px */
   @media only screen and (max-width: 760px) {
 
-    #background-video .text-box {
-      width: 95%;
-      height: auto;
-    }
-
     #background-video .bcw-title {
-      font-size: clamp(1.45rem, 2.92vw, 2.3rem);
+      font-size: clamp(1rem, 2vw, 1.6rem);
       line-height: 1.0em;
 
     }
@@ -2219,12 +2184,17 @@ h2 {
   }
 
   #contact-984 .cs-content {
-    text-align: left;
-    align-items: flex-start;
+    text-align: center;
+    align-items: center;
   }
 
   #contact-984 .cs-form {
     align-items: flex-start;
+  }
+
+  #contact-984 .cs-button-solid
+  {
+    align-self: center;
   }
 
   #contact-984 .cs-picture {
@@ -2248,5 +2218,247 @@ h2 {
     justify-content: center;
     margin-right: 5%;
 
+  }
+}
+
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1354 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 10;
+    padding-bottom: 2%;
+  }
+
+  #services-1354::before {
+    content: ""; /* Required to display the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: var(--secondary); 
+    z-index: -1;
+  }
+
+  #services-1354 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(3rem, 6vw, 4rem);
+    
+  }
+
+  #services-1354 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #services-1354 .bcw-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: var(--bodyTextColor);
+    background-color: var(--primary);
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+  }
+
+  #services-1354 .bcw-button-solid:hover {
+    color: var(--bodyTextColorWhite);
+    background-color: var(--secondary);
+
+  }
+
+  #services-1354 .cs-topper {
+    color: var(--primary);
+  }
+
+  #services-1354 .bcw-title {
+    max-width: 25ch;
+    margin: 0;
+    color: var(--bodyTextColorWhite)
+  }
+
+  #services-1354 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+
+  #services-1354 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    max-width: 25rem; /* Limit width for better appearance */
+    height: 19.0625rem;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* clips background image corners */
+    overflow: hidden;
+    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cs-box-title {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 4px 15px;
+    border: 1px solid white;
+    margin: 0;
+    text-align: center;
+    width: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+
+ #contact-984 .cs-box-title:hover  {
+  cursor: pointer;
+}
+
+  /*#services-1354 .cs-item:hover .cs-background img {
+    transform: scale(1.2);
+  }*/
+
+  #services-1354 .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
+    padding: 1.5rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #services-1354 .cs-h3 {
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+    transition: color 0.3s;
+  }
+
+  #services-1354 .cs-span {
+    /* forces the h3 to alwasy be two lines */
+    display: block;
+  }
+
+  #services-1354 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #services-1354 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition:
+      background-color 0.3s,
+      opacity 0.3s;
+  }
+
+  #services-1354 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    transition: transform 0.6s;
+  }
+}
+
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #services-1354 .cs-card-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #services-1354 .cs-item {
+    width: calc(50% - 1rem); /* 2 cards per row with gap */
+  }
+
+  #services-1354::before {
+    height: 30%;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-1354 .cs-card-group {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+  
+  #services-1354 .cs-item {
+    width: calc(33.333% - 1.5rem); /* 3 cards per row with gap */
+    max-width: 25rem;
+  }
+
+  #services-1354::before {
+    height: 55%;
   }
 }
