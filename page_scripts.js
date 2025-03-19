@@ -3,7 +3,7 @@ var CSbody = document.querySelector("body");
 const CSnavbarMenu = document.querySelector("#cs-navigation");
 const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
 
-CShamburgerMenu.addEventListener('click', function() {
+CShamburgerMenu.addEventListener('click', function () {
     CShamburgerMenu.classList.toggle("cs-active");
     CSnavbarMenu.classList.toggle("cs-active");
     CSbody.classList.toggle("cs-open");
@@ -23,26 +23,46 @@ function ariaExpanded() {
     }
 }
 
-    // This script adds a class to the body after scrolling 100px
+// This script adds a class to the body after scrolling 100px
 // and we used these body.scroll styles to create some on scroll 
 // animations with the navbar
 
 //document.addEventListener('scroll', (e) => { 
- //   const scroll = document.documentElement.scrollTop;
- //   if(scroll >= 100){
+//   const scroll = document.documentElement.scrollTop;
+//   if(scroll >= 100){
 //document.querySelector('body').classList.add('scroll')
-  //  } else {
-  //  document.querySelector('body').classList.remove('scroll')
-  //  }
+//  } else {
+//  document.querySelector('body').classList.remove('scroll')
+//  }
 //});
 
 
 // mobile nav toggle code
 const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
-    for (const item of dropDowns) {
-        const onClick = () => {
+for (const item of dropDowns) {
+    const onClick = () => {
         item.classList.toggle('cs-active')
     }
     item.addEventListener('click', onClick)
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Single function to adjust padding based on the navigation header height
+function adjustSectionsOffset() {
+    // Get the height of the navigation header
+    const header = document.getElementById('cs-navigation');
+    if (!header) return;  // Ensure header exists
+
+    const headerHeight = header.offsetHeight;
+
+    const topbanner = document.getElementById('top-text-banner');
+    if (topbanner) {
+        topbanner.style.paddingTop = `${headerHeight}px`;
     }
-                                               
+}
+
+// Attach event listeners once
+window.addEventListener('load', adjustSectionsOffset);
+window.addEventListener('resize', adjustSectionsOffset);
