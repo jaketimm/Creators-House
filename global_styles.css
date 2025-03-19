@@ -236,7 +236,7 @@ h2{
     order: 3;
   }
   #cs-navigation .cs-contact-group {
-    display: none;
+    /*display: none;*/
     position: relative;
     z-index: 10;
   }
@@ -257,9 +257,15 @@ h2{
     height: auto;
     display: block;
   }
-  #cs-navigation .cs-social {
+  /*--#cs-navigation .cs-social {
     display: none;
+  }-*/
+
+  #cs-navigation .cs-social-link{
+    display: inline-block;
+    width: 1.6rem;
   }
+
   #cs-navigation .cs-active .cs-line1 {
     top: 50%;
     transform: translate(-50%, -50%) rotate(225deg);
@@ -1489,6 +1495,7 @@ h2{
 @media only screen and (min-width: 0rem) {
   #contact-1388 {
       padding: var(--sectionPadding);
+      padding-top: 0;
       color: #000;
       position: relative;
       z-index: 1;
