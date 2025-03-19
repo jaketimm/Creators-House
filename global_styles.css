@@ -1361,7 +1361,7 @@ h2 {
 }
 
 /* Mobile-only reversal (so two pictues don't end up on top of eachother*/
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   #sbs-general .bcw-container.mobile-reverse,
   #sbsr-general .bcw-container.mobile-reverse {
     flex-direction: column-reverse;
@@ -1615,7 +1615,7 @@ h2 {
   }
 
   #contact-1388 .bcw-container {
-    width: 80%;
+    width: 100%;
     max-width: 36.5rem;
     margin: auto;
     margin-top: 5%;
