@@ -2805,7 +2805,7 @@ h2 {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 10;
-    padding-bottom: 10vh;
+    margin-bottom: 10vh;
   }
 
   /*#SBS-video_portfolio::before {
@@ -2985,7 +2985,7 @@ h2 {
   }
 
   #SBS-video_portfolio {
-    padding-bottom: 5vh;
+    margin-bottom: 12vh;
   }
 
   #SBS-video_portfolio .cs-item {
