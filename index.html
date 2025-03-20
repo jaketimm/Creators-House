@@ -7,6 +7,10 @@
     <meta name="description" content="">
     <title>Template</title>
 
+    <!-- Lite YT loader files -->
+    <link rel="stylesheet" href="lite-yt-embed.css" />
+    <script src="lite-yt-embed.js"></script>
+
     <link rel="stylesheet" href="global_styles.css">
     <meta property="og:title" content="Template">
     <meta property="og:description" content="Description">
@@ -176,8 +180,8 @@
                 <div class="cs-card-group">
                     <div class="cs-item">
                         <picture class="cs-background">
-                            <img decoding="async" src="images/pexels-fox-58267-225157.jpg" alt="video type"
-                                width="305" height="305" aria-hidden="true">
+                            <img decoding="async" src="images/pexels-fox-58267-225157.jpg" alt="video type" width="305"
+                                height="305" aria-hidden="true">
                         </picture>
                         <a class="cs-box-title" aria-label="services page" href="services.html#service1"> Service</a>
                     </div>
@@ -190,17 +194,15 @@
                     </div>
                     <div class="cs-item">
                         <picture class="cs-background">
-                            <img decoding="async" src="images/pexels-fox-58267-225157.jpg" alt="video type"
-                                width="305" height="305" aria-hidden="true">
+                            <img decoding="async" src="images/pexels-fox-58267-225157.jpg" alt="video type" width="305"
+                                height="305" aria-hidden="true">
                         </picture>
                         <a class="cs-box-title" aria-label="services page" href="services.html#service3"> Service</a>
                     </div>
                 </div>
-           
+
             </div>
         </section>
-
-
 
         <!-- ============================================ -->
         <!--                 About Section                -->
@@ -217,7 +219,7 @@
             </div>
             <div class="bcw-container">
                 <div class="bcw-content">
-                    <span class="bcw-title">ABOUT US</span>
+                    <div class="bcw-title"> ABOUT US </div>
                     <p class="bcw-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -233,42 +235,117 @@
             </div>
         </section>
 
+        <!-- ============================================ -->
+        <!--                   Contact                    -->
+        <!-- ============================================ -->
 
-    </main>
-
-
-    <!-- ============================================ -->
-    <!--                   Footer                     -->
-    <!-- ============================================ -->
-
-    <footer id="cs-footer-108">
-        <div class="cs-container">
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <a href="index.html" class="cs-link">Home</a>
-                </li>
-                <li class="cs-li">
-                    <a href="about.html" class="cs-link">About</a>
-                </li>
-                <li class="cs-li">
-                    <a href="portfolio.html" class="cs-link">Portfolio</a>
-                </li>
-                <li class="cs-li">
-                    <a href="services.html" class="cs-link">Services</a>
-                </li>
-                <li class="cs-li">
-                    <a href="contact.html" class="cs-link">Contact</a>
-                </li>
-            </ul>
-            <div class="cs-copyright">
-                © 2025 Company Name. Website Built By <a href="https://bluecrestweb.com/">Blue Crest Web Solutions</a>.
+        <section id="contact-984">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="images/pexels-photoraman-19641063.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="images/pexels-photoraman-19641063.jpg">
+                    <img loading="lazy" decoding="async" src="images/pexels-photoraman-19641063.jpg" alt="friends"
+                        width="904" height="754">
+                </picture>
+                <div class="cs-right">
+                    <div class="cs-content">
+                        <h3 class="bcw-title">INQUIRE</h3>
+                        <p class="bcw-text">
+                            Contact us for a discovery chat on how we can bring your wedding film vision to life.
+                        </p>
+                    </div>
+                    <!--Form-->
+                    <form class="cs-form" id="cs-form-587-984" name="Contact Form Other Page" method="post" netlfiy>
+                        <label class="cs-label">
+                            Name
+                            <input class="cs-input" required type="text" id="name-587-984" name="name"
+                                placeholder="Name*">
+                        </label>
+                        <label class="cs-label">
+                            Email
+                            <input class="cs-input" required type="email" id="email-587-984" name="email"
+                                placeholder="Email*">
+                        </label>
+                        <label class="cs-label">
+                            Wedding Location
+                            <input class="cs-input" required type="text" id="location-587-984" name="location"
+                                placeholder="Wedding Location*">
+                        </label>
+                        <label class="cs-label">
+                            Wedding Date
+                            <input class="cs-input" required type="date" id="email-587-984" name="email"
+                                placeholder="date">
+                        </label>
+                        <button class="cs-button-solid cs-submit" type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!--                Featured Videos               -->
+        <!-- ============================================ -->
+        <section id="SBS-video_gallery">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h2 class="bcw-title">OUR COUPLES</h2>
+                </div>
+                <div class="cs-card-group">
+                    <div class="cs-item">
+                        <div class="video-section" id="video1">
+                            <!-- YT video by browser I.D. -->
+                            <lite-youtube videoid="em3851Qro5w" playlabel="Play: Wedding Video"></lite-youtube>
+                        </div>
+                    </div>
+                    <div class="cs-item">
+                        <div class="video-section" id="video2">
+                            <!-- YT video by browser I.D. -->
+                            <lite-youtube videoid="em3851Qro5w" playlabel="Play: Wedding Video"></lite-youtube>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
-    <!-- Link to gloabl Javascript file -->
-    <script src="page_scripts.js"></script>
+
+        <!-- ============================================ -->
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="cs-footer-108">
+            <div class="cs-container">
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="about.html" class="cs-link">About</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="portfolio.html" class="cs-link">Portfolio</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="services.html" class="cs-link">Services</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="contact.html" class="cs-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="cs-copyright">
+                    © 2025 Company Name. Website Built By <a href="https://bluecrestweb.com/">Blue Crest Web
+                        Solutions</a>.
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- Link to gloabl Javascript file -->
+        <script src="page_scripts.js"></script>
 
 </body>
