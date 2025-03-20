@@ -940,6 +940,7 @@ h2 {
     position: relative;
     gap: 10%;
   }
+  
 
   #RPsbsr-248 .bcw-container {
     padding-top: 0;
@@ -957,6 +958,12 @@ h2 {
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
+  }
+
+  #RPsbsr-248 .bcw-content
+  {
+    text-align: center;
+    align-items: center;
   }
 
   #RPsbs-248 .bcw-title,
@@ -980,6 +987,11 @@ h2 {
   #RPsbsr-248 .bcw-title {
     margin-bottom: 0;
     text-align: left;
+  }
+
+  #RPsbsr-248 .bcw-title
+  {
+    margin-bottom: 3%;
   }
 
   #RPsbs-248 .italic
@@ -1043,8 +1055,9 @@ h2 {
   }
 
   #RPsbsr-248 .bcw-picture {
+    max-width: 40rem;
     margin-top: 5%;
-    margin-bottom: 8%;
+    margin-bottom: 3%;
     aspect-ratio: 1.32;
   }
 
@@ -1061,8 +1074,8 @@ h2 {
 
 @media only screen and ((min-width: 0rem) and (max-width: 48rem)) {
 
-  #RPsbs-248 .bcw-button-solid,
-  #RPsbsr-248 .bcw-button-solid {
+  #RPsbs-248 .bcw-button-solid
+  {
     align-self: center;
   }
 
@@ -1107,12 +1120,12 @@ h2 {
 
   #RPsbs-248 .bcw-picture,
   #RPsbsr-248 .bcw-picture {
-    /* 344px - 434px */
-    width: clamp(21.5rem, 37.5vw, 27.125rem);
     flex: none;
   }
 
   #RPsbs-248 .bcw-picture {
+    /* 344px - 434px */
+    width: clamp(21.5rem, 37.5vw, 27.125rem);
     margin-bottom: 0;
   }
 
@@ -1897,7 +1910,7 @@ h2 {
   }
 
   #background-video .bcw-title {
-    font-size: clamp(1.45rem, 2.92vw, 2.3rem);
+    font-size: clamp(.87rem, 1.75vw, 1.38rem);
     font-weight: 500;
     line-height: 1em;
     text-align: left;
@@ -2337,7 +2350,7 @@ h2 {
     z-index: 1;
   }
 
-  .cs-box-title {
+  #services-1354 .cs-box-title {
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -2352,9 +2365,14 @@ h2 {
     text-decoration: none;
  }
 
- #contact-984 .cs-box-title:hover  {
+ #services-1354 .cs-box-title:hover  {
   cursor: pointer;
+  background-color: var(--secondary)
 }
+
+#services-1354 a.cs-box-title{
+  font-weight: 500;
+};
 
   /*#services-1354 .cs-item:hover .cs-background img {
     transform: scale(1.2);
@@ -2406,7 +2424,7 @@ h2 {
     height: 100%;
     width: 100%;
     background-color: #000;
-    opacity: 0.4;
+    opacity: 0.2;
     top: 0;
     left: 0;
     z-index: 1;
