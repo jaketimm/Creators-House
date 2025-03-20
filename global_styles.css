@@ -94,7 +94,7 @@ html {
 }
 
 a {
-  color: var(--primary)
+  color: var(--bodyTextColor)
 }
 
 h2 {
@@ -2585,6 +2585,10 @@ h2 {
     background-color: var(--secondary);
   }
 
+  #SBS-video_gallery a{
+    color: var(--bodyTextColorWhite);
+  }
+
   /*#SBS-video_gallery::before {
     content: ""; 
     position: absolute;
@@ -2761,7 +2765,7 @@ h2 {
   }
 
   #SBS-video_gallery {
-    padding-bottom: 10vh;
+    padding-bottom: 15vh;
   }
 
   #SBS-video_gallery .cs-item {

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blue Crest Web Solutions Business Website">
+    <title>Blue Crest Web Solutions</title>
+    <link rel="stylesheet" href="../global_styles.css">
+
+    <!-- Lite YT loader files -->
+    <link rel="stylesheet" href="../lite-yt-embed.css" />
+    <script src="../lite-yt-embed.js"></script>
+
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            min-height: 150vh;
+        }
+        
+        /* Main container */
+        .video-with-caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+            margin: auto;
+            overflow: hidden;
+            
+            /* These properties ensure perfect vertical centering */
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+        }
+
+        /* Video container - now size determined by contents */
+        .video-section {
+
+            width: fit-content;
+            display: block;
+        }
+
+        /* Lite YouTube component styling */
+        lite-youtube {
+            width: 640px;
+            /* Standard YouTube size */
+            height: 360px;
+            /* 16:9 aspect ratio */
+            display: block;
+        }
+
+        /* Caption container */
+        .caption-container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .video-caption {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cs-topper {
+            display: block;
+            font-weight: bold;
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .bcw-button-solid-inquire,
+        .bcw-button-solid-back {
+            font-size: 1rem;
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: var(--bodyTextColor);
+            background-color: var(--primary);
+            min-width: 9.375rem;
+            padding: 0 1.5rem;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            margin-bottom: 5%;
+            margin-left: 5%;
+
+        }
+
+        .bcw-button-solid-back
+        {
+            color: var(--bodyTextColor);
+            background-color: #f8fafa;
+            border: solid 1px var(--bodyTextColor);
+        }
+
+
+        .bcw-button-solid-inquire:hover
+         {
+            color: var(--bodyTextColorWhite);
+            background-color: var(--secondary);
+
+        }
+
+        .bcw-button-solid-back:hover
+        {
+            color: var(--bodyTextColorWhite);
+            background-color: var(--secondary);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 650px) {
+            lite-youtube {
+                width: 320px;
+                /* Standard YouTube size */
+                height: 180px;
+                /* 16:9 aspect ratio */
+                display: block;
+            }
+
+            .video-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="portfolio-page scroll">
+    <main>
+
+        <!-- ============================================ -->
+        <!--                 Video Player                 -->
+        <!-- ============================================ -->
+        <div class="video-with-caption">
+            <div class="video-section" id="video1">
+                <!-- YT video by browser I.D. -->
+                <lite-youtube videoid="em3851Qro5w" playlabel="Play: Wedding Video"></lite-youtube>
+            </div>
+            <div class="caption-container">
+                <div class="video-caption">
+                    <span class="cs-topper">Name & Name:</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="caption-container">
+                <div class="video-caption">
+                    <a class="bcw-button-solid-inquire" aria-label="Back" href="../contact.html"> Inquire</a>
+                    <a class="bcw-button-solid-back" aria-label="see all videos" href="../portfolio.html"> Back</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
