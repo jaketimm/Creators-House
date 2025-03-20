@@ -923,6 +923,10 @@ h2 {
     z-index: 1;
   }
 
+  #RPsbsr-248 {
+    padding-top: 10%;
+  }
+
   #RPsbs-248 .bcw-container,
   #RPsbsr-248 .bcw-container {
     width: 100%;
@@ -2638,7 +2642,6 @@ h2 {
     /* Limit width for better appearance */
     margin: 0;
     padding: 0;
-    overflow: hidden;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -2646,8 +2649,31 @@ h2 {
     justify-content: flex-end;
     position: relative;
     z-index: 1;
+    margin-bottom: 50%;
   }
 
+  #SBS-video_gallery .caption-container {
+    width: 100%;
+    /* Ensures the container spans the full width of the cs-item */
+    height: 50px;
+    /* Fix height to 50px */
+  }
+
+  #SBS-video_gallery .video-caption {
+    height: 50px;
+    text-align: left;
+    /* Center align the text */
+    font-size: 1rem;
+    /* Adjust font size as needed */
+    color: var(--bodyTextColorWhite);
+    /* Set text color */
+  }
+
+
+  #SBS-video_gallery .cs-topper {
+    font-size: 1.2rem;
+    color: var(--bodyTextColorWhite)
+  }
 
   #SBS-video_gallery .cs-h3 {
     font-size: 1.4rem;
@@ -2675,12 +2701,30 @@ h2 {
   }
 }
 
+
+/* Tablet - 600px */
+@media only screen and (min-width: 30rem) {
+  #SBS-video_gallery .cs-item {
+    margin-bottom: 25%;
+  }
+}
+
+
+/* Tablet - 600px */
+@media only screen and (min-width: 40rem) {
+
+  #SBS-video_gallery .cs-item {
+    margin-bottom: 15%;
+  }
+}
+
 /* Tablet - 600px */
 @media only screen and (min-width: 62.5rem) {
   #SBS-video_gallery .cs-card-group {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
   }
 
   #SBS-video_gallery {
