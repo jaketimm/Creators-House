@@ -2104,7 +2104,7 @@ h2 {
   #contact-984 {
     position: relative;
     z-index: 1;
-    margin-top: 5%;
+    margin-top: 15%;
   }
 
   #contact-984 .cs-container {
@@ -2263,6 +2263,7 @@ h2 {
   #contact-984 {
     padding: var(--sectionPadding);
     position: relative;
+    margin-top: 0;
   }
 
   #contact-984 .cs-container {
@@ -2299,6 +2300,7 @@ h2 {
     width: 50%;
     max-width: 30rem;
     padding: 0;
+    padding-right: 5%;
   }
 }
 
@@ -2702,7 +2704,8 @@ h2 {
 
   #SBS-video_gallery .cs-topper {
     font-size: 1.2rem;
-    color: var(--bodyTextColorWhite)
+    color: var(--bodyTextColorWhite);
+    font-weight: 900;
   }
 
   #SBS-video_gallery .cs-h3 {
@@ -2758,7 +2761,7 @@ h2 {
   }
 
   #SBS-video_gallery {
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
   }
 
   #SBS-video_gallery .cs-item {
@@ -2921,7 +2924,8 @@ h2 {
 
   #SBS-video_portfolio .cs-topper {
     font-size: 1.2rem;
-    color: var(--bodyTextColor)
+    color: var(--bodyTextColor);
+    font-weight: 900;
   }
 
   #SBS-video_portfolio .cs-h3 {
