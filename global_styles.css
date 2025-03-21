@@ -1177,7 +1177,7 @@ h2 {
     padding: 0 1em;
     position: relative;
     z-index: 1;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 
   }
 
@@ -1379,6 +1379,11 @@ h2 {
 
 /* Tablet - 768px */
 @media only screen and (min-width: 1050px) {
+
+  #sbs-general,
+  #sbsr-general {
+    padding-bottom: 5%;
+  }
 
   #sbs-general .bcw-container,
   #sbsr-general .bcw-container {
@@ -2630,8 +2635,9 @@ h2 {
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: var(--bodyTextColorWhite);
-    background-color: var(--secondary);
+    color: var(--bodyTextColor);
+    background-color: var(--primary);
+    border: solid 1px var(--bodyTextColor);
     min-width: 9.375rem;
     padding: 0 1.5rem;
     display: inline-block;
@@ -2644,9 +2650,9 @@ h2 {
   }
 
   #SBS-video_gallery .bcw-button-solid:hover {
-    color: var(--bodyTextColor);
-    background-color: var(--bodyTextColorWhite);
-    border: solid 1px var(--bodyTextColor);
+    color: var(--bodyTextColorWhite);
+    background-color: var(--secondary);
+
 
   }
 
