@@ -15,6 +15,7 @@
   --secondary: #4f4f4f;
   --headerColor: #000000;
   --bodyTextColor: #000000;
+  --tertiary: #d9d9d9;
   /* global text color */
   --bodyTextColorWhite: #ffffff;
   --navigationBarColor: #f8fafa;
@@ -2339,7 +2340,7 @@ h2 {
     position: relative;
     z-index: 10;
     padding-bottom: 10vh;
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
   }
 
   /*#services-1354::before {
@@ -2409,7 +2410,7 @@ h2 {
   #services-1354 .bcw-title {
     max-width: 25ch;
     margin: 0;
-    color: var(--bodyTextColorWhite)
+    color: var(--bodyTextColor)
   }
 
   #services-1354 .cs-card-group {
@@ -2596,11 +2597,11 @@ h2 {
     position: relative;
     z-index: 10;
     padding-bottom: 10vh;
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
   }
 
   #SBS-video_gallery a{
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
   }
 
   /*#SBS-video_gallery::before {
@@ -2647,7 +2648,6 @@ h2 {
     margin: 0;
     color: var(--bodyTextColorWhite);
     background-color: var(--secondary);
-    border: solid 1px var(--bodyTextColorWhite);
     min-width: 9.375rem;
     padding: 0 1.5rem;
     display: inline-block;
@@ -2661,6 +2661,7 @@ h2 {
   #SBS-video_gallery .bcw-button-solid:hover {
     color: var(--bodyTextColor);
     background-color: var(--bodyTextColorWhite);
+    border: solid 1px var(--bodyTextColor);
 
   }
 
@@ -2671,7 +2672,7 @@ h2 {
   #SBS-video_gallery .bcw-title {
     max-width: 25ch;
     margin: 0;
-    color: var(--bodyTextColorWhite)
+    color: var(--bodyTextColor)
   }
 
   #SBS-video_gallery .cs-card-group {
@@ -2715,14 +2716,14 @@ h2 {
     /* Center align the text */
     font-size: 1rem;
     /* Adjust font size as needed */
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     /* Set text color */
   }
 
 
   #SBS-video_gallery .cs-topper {
     font-size: 1.2rem;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     font-weight: 900;
   }
 
