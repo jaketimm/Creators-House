@@ -988,6 +988,8 @@ h2 {
     position: relative;
   }
 
+
+
   #RPsbsr-248 .bcw-title {
     align-self: center;
   }
@@ -1002,6 +1004,11 @@ h2 {
   #RPsbsr-248 .bcw-title {
     margin-bottom: 0;
     text-align: left;
+  }
+
+  #RPsbs-248 .padded
+  {
+    margin-bottom: 5%;
   }
 
   #RPsbsr-248 .bcw-title {
@@ -2056,7 +2063,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 7rem;
     background-color: var(--secondary);
 
   }
@@ -2073,15 +2080,6 @@ h2 {
 }
 
 
-@media only screen and (min-width: 400px) {
-
-  #mid-text-banner1,
-  #mid-text-banner2,
-  #mid-text-banner3 {
-    height: 9rem
-  }
-}
-
 @media only screen and (min-width: 48rem) {
 
   #mid-text-banner1,
@@ -2090,36 +2088,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10rem;
+    height: 8rem;
 
   }
 
 }
-
-@media only screen and (min-width: 400px) {
-
-  #mid-text-banner1,
-  #mid-text-banner2,
-  #mid-text-banner3 {
-    height: 9rem
-  }
-}
-
-
-@media only screen and (min-width: 48rem) {
-
-  #mid-text-banner1,
-  #mid-text-banner2,
-  #mid-text-banner3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10rem;
-  }
-
-
-}
-
 
 /*-- -------------------------- -->
 <---     Other Contact Form     -->
@@ -3234,9 +3207,9 @@ h2 {
   #Banner-Section-With-Text .banner {
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 20rem;
     overflow: hidden;
-    max-height: 300px;
+
   }
 
   #Banner-Section-With-Text .banner img {
@@ -3311,12 +3284,109 @@ h2 {
 }
 
 /* Tablet - 768px */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
 
   /* Fixed banner styles */
   #Banner-Section-With-Text .banner {
-    height: 60vh;
-    max-height: 700px;
+    height: 35rem;
   }
 
+}
+
+
+/*-- -------------------------- -->
+<---           Stats            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #stats-316 {
+      padding: var(--sectionPadding);
+  }
+  
+  #stats-316 .cs-card-group {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: 37.5em;
+      margin: auto;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2.5rem;
+  }
+
+  #stats-316 .cs-item {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Center items horizontally */
+      align-items: center;
+      flex-direction: column; /* Stack number and description vertically */
+  }
+
+  #stats-316 .cs-picture {
+      width: 5rem;
+      height: 5rem;
+      /* 12px - 20px */
+      margin-bottom: 1rem; /* Adds space between image and text */
+      border-radius: 50%;
+      border: 1px solid var(--primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* prevents flexbox from squishing it */
+      flex: none;
+  }
+
+  #stats-316 .cs-icon {
+      width: 2.5rem;
+      height: auto;
+  }
+
+  #stats-316 .cs-flex-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Ensure the number and description are stacked */
+  }
+
+  #stats-316 .cs-number {
+      font-size: clamp(2.53rem, 5.11vw, 4rem);
+      color: var(--bodyTextColor);
+      font-weight: 1000;
+      line-height: 1.2em;
+      margin: 0;
+      text-align: center; /* Center the number text */
+      display: block;
+  }
+
+  #stats-316 .cs-desc {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5em;
+      color: var(--secondary);
+      text-align: center; /* Center the description text */
+      display: block;
+  }
+}
+
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+  #stats-316 .cs-card-group {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 3rem;
+      row-gap: 2rem;
+  }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #stats-316 .cs-card-group {
+      max-width: 80rem;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+  }
 }
