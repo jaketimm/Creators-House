@@ -2405,7 +2405,7 @@ h2 {
   #services-1354 .cs-card-group {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2415,8 +2415,8 @@ h2 {
   #services-1354 .cs-item {
     text-align: center;
     list-style: none;
-    width: 100%;
-    max-width: 25rem;
+    width: 100vw;
+    max-width: 30rem;
     /* Limit width for better appearance */
     height: 19.0625rem;
     margin: 0;
@@ -2533,8 +2533,9 @@ h2 {
 }
 
 /* Tablet - 600px */
-@media only screen and (min-width: 37.5rem) {
+@media only screen and (min-width: 50rem) {
   #services-1354 .cs-card-group {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -2545,6 +2546,10 @@ h2 {
   }
 
   #services-1354 .cs-item {
+    width: 100%;
+    max-width: 25rem;
+    /* Limit width for better appearance */
+    max-height: 25rem;
     width: calc(50% - 1rem);
     /* 2 cards per row with gap */
   }
@@ -2555,7 +2560,7 @@ h2 {
 }
 
 /* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 75rem) {
   #services-1354 .cs-card-group {
     flex-direction: row;
     flex-wrap: nowrap;
