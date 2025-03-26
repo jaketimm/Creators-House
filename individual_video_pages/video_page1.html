@@ -13,13 +13,12 @@
     <script src="../lite-yt-embed.js"></script>
 
     <style>
-
         body {
             display: flex;
             justify-content: center;
             min-height: 150vh;
         }
-        
+
         /* Main container */
         .video-with-caption {
             display: flex;
@@ -28,7 +27,7 @@
             width: fit-content;
             margin: auto;
             overflow: hidden;
-            
+
             /* These properties ensure perfect vertical centering */
             position: absolute;
             top: 25%;
@@ -41,15 +40,6 @@
         .video-section {
 
             width: fit-content;
-            display: block;
-        }
-
-        /* Lite YouTube component styling */
-        lite-youtube {
-            width: 640px;
-            /* Standard YouTube size */
-            height: 360px;
-            /* 16:9 aspect ratio */
             display: block;
         }
 
@@ -102,35 +92,57 @@
 
         }
 
-        .bcw-button-solid-back
-        {
+        .bcw-button-solid-back {
             color: var(--bodyTextColor);
             background-color: #f8fafa;
             border: solid 1px var(--bodyTextColor);
         }
 
 
-        .bcw-button-solid-inquire:hover
-         {
+        .bcw-button-solid-inquire:hover {
             color: var(--bodyTextColorWhite);
             background-color: var(--secondary);
 
         }
 
-        .bcw-button-solid-back:hover
-        {
+        .bcw-button-solid-back:hover {
             color: var(--bodyTextColorWhite);
             background-color: var(--secondary);
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 650px) {
+        /* Lite YouTube component styling */
+        @media (min-width: 0px) {
             lite-youtube {
                 width: 320px;
                 /* Standard YouTube size */
                 height: 180px;
                 /* 16:9 aspect ratio */
                 display: block;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 750px) {
+            lite-youtube {
+                width: 640px;
+                /* Standard YouTube size */
+                height: 360px;
+                /* 16:9 aspect ratio */
+            }
+
+            .video-section {
+                width: 100%;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 1000px) {
+            lite-youtube {
+
+                width: 720px;
+                /* Standard YouTube size */
+                height: 405px;
+                /* 16:9 aspect ratio */
             }
 
             .video-section {
